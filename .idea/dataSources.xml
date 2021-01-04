@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="aili_gzworkload" group="gz_test" uuid="4b84bc1e-9faa-461a-9a1e-ab3ed6892c0f">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@59.110.160.28:1521/orcl</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="local_coms" group="local_test" uuid="ec149dc1-5306-4cd7-899b-6893745c512b">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:helowin</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="test_gzworkload" group="gz_test" uuid="33988b57-50ad-4229-a4bd-a0462e145db5">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@135.0.64.165:1521/xqgltest</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="production_gzworkload" group="gz_produc" uuid="5a36fd2a-34a0-4867-9bd0-d29afe945e2c">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@135.0.64.168:1521/xqgldb</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="local_ruoyi-cloud" group="local_test" uuid="e6383ac4-ae02-471d-bb4b-4dcd51eb35e9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="local_sys" group="local_test" uuid="e893e5d1-bbbb-4760-bf5c-1fe2a477b6ca">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//localhost:1521/helowin</jdbc-url>
+      <driver-properties>
+        <property name="internal_logon" value="sysdba" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="local_leetcode" group="local_test" uuid="f446bec7-cd20-4de8-9da3-068d8daf1f85">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="docker_mysql8.0" group="local_test" uuid="09fb4567-3b12-4f46-82c0-0d4915e654db">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="gzrms" group="gz_test" uuid="e0280431-91cd-40df-969f-a4338301a957">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://135.0.113.191:8922</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="gzworkload_mysql" group="gz_test" uuid="8e7d6dea-c3b3-467d-990d-c9c306283be7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://135.0.113.191:8922/gzworkload</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="production_gzrms" group="gz_produc" uuid="631bfc6f-f020-4d92-91dd-3bd6df1b1354">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@//135.0.64.162:1521/xqgldb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="admin" group="local_test" uuid="2675eda0-2b89-4dae-8f4d-582689f45154">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://localhost:27017</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="production_gzworkload" group="gz_produc" uuid="cf7f2dbb-0eec-44ad-9eac-354ef102f08f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://135.0.115.123:9002/gzrmssc</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="aili_ctmp" group="ah_test" uuid="61adf586-b95a-4e44-9853-6f931a87896b">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@59.110.160.28:1521:orcl11g</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="production_scmp" group="ah_produc" uuid="b41afc6f-7231-43f5-9d76-2a40f6c26142">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>scmp生产数据库</remarks>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@10.243.207.50:1521:prdorcl</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
