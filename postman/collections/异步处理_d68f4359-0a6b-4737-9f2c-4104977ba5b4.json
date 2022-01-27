@@ -1,0 +1,454 @@
+{
+    "info": {
+        "_postman_id": "c90c9536-fe9a-4541-9790-f416ed284145",
+        "name": "异步处理",
+        "description": "异步控制器\n异步Controller",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "无返回值",
+            "id": "dba50284-0567-4a3d-9059-0966e206b9b4",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/sysOperLog/a",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "sysOperLog",
+                        "a"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "5d8b8607-f8f5-47d0-9bd3-d2c4124086a7",
+                    "name": "无返回值",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/a",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "a"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "plain",
+                    "header": [
+                        {
+                            "key": "Content-Length",
+                            "value": "0"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:07:25 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": null
+                }
+            ]
+        },
+        {
+            "name": "主线程不需要返回值",
+            "id": "40051d91-d413-4bd4-9568-2a548034d881",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/sysOperLog/b",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "sysOperLog",
+                        "b"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "c85610f7-bd59-4e85-b78c-e1affe330e6e",
+                    "name": "主线程不需要返回值",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/b",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "b"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain;charset=UTF-8"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "42"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:07:52 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 0,\n    \"data\": \"b\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "主线程需要返回值",
+            "id": "b60d71a3-3b5c-4a86-9b7a-d57223449c2f",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/sysOperLog/c",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "sysOperLog",
+                        "c"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "1b13087b-074a-45aa-8746-d530c3b3d27a",
+                    "name": "主线程需要返回值",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/c",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "c"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain;charset=UTF-8"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "47"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:20:15 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 0,\n    \"data\": \"Jeycyp\"\n}"
+                }
+            ]
+        },
+        {
+            "name": "事务正常提交",
+            "id": "0663e502-be38-4969-9c6b-c0f6cac91c34",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/sysOperLog/d",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "sysOperLog",
+                        "d"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "251ec06b-f3bb-4054-b9dc-1a42704fb28f",
+                    "name": "事务正常提交",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/d",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "d"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "plain",
+                    "header": [
+                        {
+                            "key": "Content-Length",
+                            "value": "0"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:36:46 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": null
+                }
+            ]
+        },
+        {
+            "name": "模拟异常事务回滚",
+            "id": "767c7d63-e213-45a1-98d1-110c1d7e9815",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/sysOperLog/f",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "sysOperLog",
+                        "f"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "d88415bf-5019-4121-a3b1-5e1ea5dba41b",
+                    "name": "模拟异常事务回滚",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/f",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "f"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "plain",
+                    "header": [
+                        {
+                            "key": "Content-Length",
+                            "value": "0"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:37:32 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": null
+                }
+            ]
+        },
+        {
+            "name": "取文章后阅读量",
+            "id": "cb486e9c-55d3-4b42-af01-b77f66701393",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "{{jeycyp-basis}}/article/getArticle",
+                    "host": [
+                        "{{jeycyp-basis}}"
+                    ],
+                    "path": [
+                        "article",
+                        "getArticle"
+                    ]
+                }
+            },
+            "response": [
+                {
+                    "id": "2149a11c-c376-4c5d-9c0f-68aaae5024e0",
+                    "name": "模拟异常事务回滚",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/sysOperLog/f",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "sysOperLog",
+                                "f"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "plain",
+                    "header": [
+                        {
+                            "key": "Content-Length",
+                            "value": "0"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:37:32 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": null
+                },
+                {
+                    "id": "2a635234-a017-4ed3-a34a-fbd02bef93ce",
+                    "name": "取文章后阅读量",
+                    "originalRequest": {
+                        "method": "POST",
+                        "header": [],
+                        "url": {
+                            "raw": "{{jeycyp-basis}}/article/getArticle",
+                            "host": [
+                                "{{jeycyp-basis}}"
+                            ],
+                            "path": [
+                                "article",
+                                "getArticle"
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain;charset=UTF-8"
+                        },
+                        {
+                            "key": "Content-Length",
+                            "value": "53"
+                        },
+                        {
+                            "key": "Date",
+                            "value": "Mon, 08 Nov 2021 08:59:18 GMT"
+                        },
+                        {
+                            "key": "Keep-Alive",
+                            "value": "timeout=60"
+                        },
+                        {
+                            "key": "Connection",
+                            "value": "keep-alive"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n    \"msg\": \"操作成功\",\n    \"code\": 0,\n    \"data\": \"文章详情\"\n}"
+                }
+            ]
+        }
+    ]
+}
